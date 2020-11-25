@@ -23,3 +23,4 @@ Route::resource('/destination', 'DestinationController');
 // Route::post('/destination', 'DestinationController@store');
 Route::get('/user/profile','ProfileController@create');
 Route::put('/profile/{profile}','ProfileController@update');
+Route::get('/user','UserController@index');
