@@ -106,6 +106,9 @@ class DestinationController extends Controller
      */
     public function destroy(Destination $destination)
     {
-        //
+        $destination->delete();
+        session()->flash('success','Destination deleted successfully');
+        return redirect(route('destination.index'));
+       
     }
 }
